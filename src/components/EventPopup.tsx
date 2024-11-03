@@ -15,7 +15,7 @@ type eventProp = {
   setShowPopup: (show: boolean) => void
 }
 
-function EventPopup({date, setShowPopup}:eventProp) {
+function EventPopup({setShowPopup}:eventProp) {
   return (
     <div onClick={()=>setShowPopup(false)} className='fixed top-0 left-0 right-0 bottom-0 bg-[#101828B2] z-50 flex justify-center items-center '>
       {/* stop propogation on click */}

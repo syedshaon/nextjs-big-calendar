@@ -2,7 +2,7 @@
 import React, { useCallback, useState, useEffect } from 'react';
 import { FiArrowLeft, FiArrowRight } from 'react-icons/fi';
 import moment from 'moment';
-import { EventProps, Views } from 'react-big-calendar';
+import { EventProps, Views, Components } from 'react-big-calendar';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import 'react-big-calendar/lib/css/react-big-calendar.css';
@@ -54,7 +54,7 @@ export default function NewCalendar() {
     }
   }, [view, date]);
 
-  const components: any = {
+  const components: Components<EventItem> = {
     event: ({ event }: EventProps<EventItem>) => {
       const data = event?.data;
       return (
