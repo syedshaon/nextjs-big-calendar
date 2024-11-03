@@ -6,10 +6,9 @@ import { EventProps, Views } from 'react-big-calendar';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import 'react-big-calendar/lib/css/react-big-calendar.css';
-
 import EventPopup from './EventPopup';
 import './index.css';
-import { EVENTS, VIEW_OPTIONS } from './constants';
+import { EVENTS } from './constants';
 import { EventItem } from './types';
 import Calendar from './Calendar';
 import { getWeekNumber, getMonthRange, formatTimeTo12Hour } from './Helpers';

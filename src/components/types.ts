@@ -22,6 +22,6 @@ export enum importanceLevel {
 export type EventItem = {
   start?: Date;
   end?: Date;
-  data?: { name?: String; type?: eventType };
+  data?: { name?: string; type?: eventType };
   importance?: importanceLevel;
 };

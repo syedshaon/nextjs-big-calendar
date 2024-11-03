@@ -1,7 +1,6 @@
 'use client';
 import Image from "next/image";
 import { FiCalendar } from "react-icons/fi";
-import { CiCalendar } from "react-icons/ci";
 import { FiClock } from "react-icons/fi";
 import pin from "./pin-location.svg"
 import aa from "./imgs/aa.png"
@@ -9,7 +8,6 @@ import bb from "./imgs/bb.png"
 import cc from "./imgs/cc.png"
 import ee from "./imgs/ee.png"
 import dd from "./imgs/dd.png"
-import { RiDeleteBinLine } from "react-icons/ri";
 import { FaRegTrashCan } from "react-icons/fa6";
 
 type eventProp = {
