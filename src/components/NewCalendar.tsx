@@ -3,7 +3,7 @@ import React, { useCallback, useState, useEffect } from 'react';
 import { FiArrowLeft, FiArrowRight } from 'react-icons/fi';
 import moment from 'moment';
 import { EventProps, Views, Components } from 'react-big-calendar';
-import DatePicker from 'react-datepicker';
+import DatePicker from "react-datepicker";
 import 'react-datepicker/dist/react-datepicker.css';
 import 'react-big-calendar/lib/css/react-big-calendar.css';
 import EventPopup from './EventPopup';
@@ -100,7 +100,7 @@ export default function NewCalendar() {
               <div className="relative text-[18px] text-[#181D27] font-bold w-[145px] flex items-center">
                 <DatePicker
                   selected={date}
-                  onChange={(date: Date) => setDate(date)}
+                  onChange={(date: Date | null) => date && setDate(date)}
                   showTimeSelect={false}
                   dateFormat="MMMM yyyy"
                 />
