@@ -36,7 +36,7 @@ function EventPopup({setShowPopup}:eventProp) {
             <p className="font-[500] mb-2">Details</p>
             <p className="flex  text-[#535862] items-center gap-4"><FiCalendar/>Friday, Jan 10, 2025</p>
             <p className="flex  text-[#535862] items-center gap-4"> <FiClock/>1:30 PM - 3:30 PM</p>
-            <p className="flex  text-[#535862] items-center gap-4"> <Image width={40} height={40} className="w-[14px]" src={pin} alt="location" /> District, Road, City</p>
+            <p className="flex  text-[#535862] items-center gap-4"> <img src={pin.src} alt="location" className="w-[14px]" /> District, Road, City</p>
          </div>
 
           <div className=" text-[14px] leading-6 w-full mt-5 ">
@@ -80,7 +80,7 @@ function EventPopup({setShowPopup}:eventProp) {
 
             <div className=" flex justify-between w-full mt-7">
 
-              <button onClick={()=>{}} className=" cursor-pointer hidden md:flex mr-auto font-semibold text-[16px] text-[#535862]   justify-center items-center gap-2">
+              <button onClick={()=>{console.log("delete clicked")}} className=" cursor-pointer hidden md:flex mr-auto font-semibold text-[16px] text-[#535862]   justify-center items-center gap-2">
                   <FaRegTrashCan/> Delete
               </button>
               <div className="flex flex-col md:flex-row  justify-end items-stretch md:items-center gap-3 w-full">
