@@ -1,0 +1,250 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ 
+
+.rbc-off-range-bg, .rbc-today{
+  background-color: transparent !important;
+}
+
+.rbc-header span{
+  font-size: 18px !important;
+  color: #717680 !important;
+ 
+}
+.rbc-header{
+   height: 28px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Regarding every event, removing style of container */
+.rbc-event, .rbc-event:hover, .rbc-event:focus{
+padding: 0px !important;
+background-color: transparent !important;
+border-color: transparent !important;
+    outline: none !important;
+}
+.rbc-selected{
+    border-color: transparent !important;
+    outline: none !important;
+    
+}
+
+
+.rbc-day-slot .rbc-event{
+padding: 2px 5px !important;
+background-color: #B2DDFF !important;
+}
+
+.rbc-event-content{
+  margin-left: 5px !important;
+  margin-right: 5px !important;
+}
+
+.rbc-date-cell{
+  padding-left: 10px !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  padding-right: 0 !important;
+  text-align: left !important;
+}
+.rbc-date-cell button{
+  font-size: 12px;
+  color: #717680;
+  font-weight: 600;
+}
+.rbc-now button{
+  width: 24px;
+  height: 24px;
+  background-color: #20356A;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Event specific css starts */
+.event-Study{
+  background-color: #EFF8FF !important;
+  border: 1px solid #B2DDFF !important;
+  color: #046bba !important;
+  transition: all 0.3s ease;
+}
+.event-Study .priority-High{
+  background-color: #046bba !important;
+}
+.rbc-selected .event-Study,   .event-Study:hover, .event-Study:focus{
+  border: 1px solid #046bba !important;
+}
+.event-Appointment{
+  background-color: #FDF2FA !important;
+  border: 1px solid #FCCEEE !important;
+  color: #C11574 !important;
+  transition: all 0.3s ease;
+}
+.event-Appointment .priority-High{
+  background-color: #C11574 !important;
+}
+.rbc-selected .event-Appointment,   .event-Appointment:hover, .event-Appointment:focus{
+  border: 1px solid #C11574 !important;
+}
+.event-Meetup{
+  background-color:  #EDFCF2 !important;
+  border: 1px solid #AAF0C4 !important;
+  color: #087443 !important;
+  transition: all 0.3s ease;
+}
+.event-Meetup .priority-High{
+  background-color: #087443 !important;
+}
+.rbc-selected .event-Meetup,   .event-Meetup:hover, .event-Meetup:focus{
+  border: 1px solid #087443 !important;
+}
+
+.event-Library{
+  background-color: #FEF6EE !important;
+  border: 1px solid #F9DBAF !important;
+  color: #B93815 !important;
+  transition: all 0.3s ease;
+}
+.event-Library .priority-High{
+  background-color: #B93815 !important;
+}
+.rbc-selected .event-Library,   .event-Library:hover, .event-Library:focus{
+  border: 1px solid #B93815 !important;
+}
+
+.event-Gym{
+  background-color: #F9F5FF !important;
+  border: 1px solid #E9D7FE !important;
+  color: #20356A !important;
+  transition: all 0.3s ease;
+}
+.event-Gym .priority-High{
+  background-color: #20356A !important;
+}
+
+.event-Shopping{
+  background-color: #FAFAFA !important;
+  border: 1px solid #E9EAEB !important;
+  color: #414651 !important;
+  transition: all 0.3s ease;
+}
+.event-Shopping .priority-High{
+  background-color: #414651 !important;
+}
+
+.rbc-selected .event-Gym,   .event-Gym:hover, .event-Gym:focus{
+  border: 1px solid #20356A !important;
+}
+
+.event-Other{
+  background-color: #F4F3FF !important;
+  border: 1px solid #D9D6FE !important;
+  color: #5925DC !important;
+  transition: all 0.3s ease;
+}
+.event-Other .priority-High{
+  background-color: #5925DC !important;
+}
+
+/* Event specific css ends */
+.rbc-selected .event-Other,   .event-Other:hover, .event-Other:focus{
+  border: 1px solid #5925DC !important;
+}
+
+.priority-Medium, .priority-Low{
+  width: 0px !important;
+
+}
+.priority-High{
+  width: 8px !important;
+  height: 8px !important;
+  
+  border-radius: 50% !important;
+}
+
+
+
+select:focus-visible {
+  outline: none !important;
+}
+
+.react-datepicker-wrapper, .react-datepicker-ignore-onclickoutside, .react-datepicker__input-container, .react-datepicker-ignore-onclickoutside input{
+  width: 170px !important;
+}
+.react-datepicker__input-container input:focus, .react-datepicker__input-container input:hover{
+  outline: none !important;
+}
+.react-datepicker-wrapper{
+overflow: hidden !important;
+}
+
+select {
+  
+  position: relative;
+}
+
+/* Add a custom chevron */
+.slctElement::after, select::after, select::before {
+  content: "v"; /* Unicode for a down-pointing triangle */
+  position: absolute;
+  left: 10px;
+  pointer-events: none; /* Prevents arrow from interfering with select */
+  font-size: 14px;
+  color: #ec0808;
+}
+/* .rbc-header {
+  color: white;
+  font-size: 14px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px !important;
+  background: #17405d;
+}
+
+.rbc-allday-cell {
+  display: none;
+}
+
+.rbc-time-header-cell .rbc-today {
+  background-color: #04aa6d !important;
+}
+
+.rbc-time-slot {
+  color: #74a4c3;
+  z-index: 1;
+}
+
+.rbc-time-slot:not(.rbc-today .rbc-time-slot) {
+  background-color: #eff4f7;
+}
+
+/*Event Styles*/
+/* .rbc-event,
+.rbc-background-event {
+  z-index: 2;
+  padding: 0px !important;
+  border: none !important;
+}
+
+.rbc-event-label {
+  display: none !important;
+}
+
+.rbc-events-container {
+  width: 100% !important;
+}
+
+/*Timeslots Customization*/
+/* .rbc-day-slot .rbc-time-slot:after {
+  content: "";
+  width: 100%;
+  border-top: 1px solid #fbb3ec;
+  display: block;
+}   */
